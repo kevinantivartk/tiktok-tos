@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Capturar el código de TikTok
+const urlParams = new URLSearchParams(window.location.search);
+const code = urlParams.get('code');
+const state = urlParams.get('state');
+
+if (code) {
+    console.log('Authorization code received:', code);
+    // Aquí intercambiarías code por token
+    document.body.innerHTML = '<h1>Authentication successful!</h1><p>You can close this window.</p>';
+}
+</script>
+</body>
+</html>
